@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Preguntas</string>
+    <string name="true_text">Cierto</string>
+    <string name="false_text">Falso</string>
+    <string name="question_text_1">¿La tierra es Plana?</string>
+    <string name="wrong_text">Incorrecto</string>
+    <string name="right_text">Correcto</string>
+    <string name="next_text">Siguiente</string>
+</resources>

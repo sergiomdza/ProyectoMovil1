@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="true_text">TRUE</string>
+    <string name="false_text">FAlSE</string>
+    <string name="question_text_1">Is the Earth flat?</string>
+    <string name="wrong_text">Wrong</string>
+    <string name="right_text">Right</string>
+    <string name="next_text">Next</string>
+</resources>
