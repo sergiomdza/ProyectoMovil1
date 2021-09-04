@@ -1,23 +1,39 @@
 package com.example.quizapp
 
-class GameModel {
+import android.content.Context
+import android.content.res.Resources
+
+class GameModel (private val context: Context) {
     private val questions = listOf<Question>(
-        Question("¿La luna es de queso?", true),
-        Question("¿La tierra es plana?", false),
-        Question("¿El cielo es azul?", true),
-        Question("¿China creo el covid?", false),
-        Question("¿El hombre llegó a la luna?", true),
-        Question("¿El 5G hace daño?", false),
-        Question("¿El cielo se cae?", false),
-        Question("¿Realmente tiene otros datos?", true),
+        Question(context.getString(R.string.question1), true, false),
+        Question(context.getString(R.string.question2), false, false),
+        Question(context.getString(R.string.question3), true, false),
+        Question(context.getString(R.string.question4), false, false),
+        Question(context.getString(R.string.question5), true, false),
+        Question(context.getString(R.string.question6), false, false),
+        Question(context.getString(R.string.question7), false, false),
+        Question(context.getString(R.string.question8), true, false),
     )
 
     private var currentQuestionIndex = 0
 
     fun getCurrentQuestion() = questions[currentQuestionIndex]
 
+    fun setAnswered() {
+        questions[currentQuestionIndex].answered = true
+    }
+
     fun nextQuestion() : Question {
         currentQuestionIndex = (currentQuestionIndex + 1) % questions.size
+        return questions[currentQuestionIndex]
+    }
+
+    fun prevQuestion() : Question {
+        if (currentQuestionIndex - 1 < 0) {
+            currentQuestionIndex = questions.size -1
+        } else {
+            currentQuestionIndex -= 1
+        }
         return questions[currentQuestionIndex]
     }
 }

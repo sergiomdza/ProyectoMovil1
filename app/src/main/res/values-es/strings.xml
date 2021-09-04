@@ -7,4 +7,17 @@
     <string name="wrong_text">Incorrecto</string>
     <string name="right_text">Correcto</string>
     <string name="next_text">Siguiente</string>
+    <string name="prev_text">Anterior</string>
+    <string name="question_answered">Pregunta previamente contestada</string>
+    <string name="grey_color">#808080 </string>
+    <string name="green_color">#5DB15D </string>
+    <string name="red_color">#DA1B1B </string>
+    <string name="question1">¿La Luna es de queso?</string>
+    <string name="question2">¿La tierra es plana?</string>
+    <string name="question3">¿El cielo es azul?</string>
+    <string name="question4">¿China creo el covid?</string>
+    <string name="question5">¿El hombre llegó a la luna?</string>
+    <string name="question6">¿El 5G hace daño?</string>
+    <string name="question7">¿El cielo se cae?</string>
+    <string name="question8">¿Realmente tiene otros datos?</string>
 </resources>

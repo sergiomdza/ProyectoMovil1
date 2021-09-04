@@ -6,4 +6,17 @@
     <string name="wrong_text">Wrong</string>
     <string name="right_text">Right</string>
     <string name="next_text">Next</string>
+    <string name="prev_text">Prev</string>
+    <string name="question_answered">Question already answered</string>
+    <string name="grey_color">#808080 </string>
+    <string name="green_color">#5DB15D </string>
+    <string name="red_color">#DA1B1B </string>
+    <string name="question1">The moon is made out of cheese?</string>
+    <string name="question2">The Earth is flat?</string>
+    <string name="question3">The sky is blue?</string>
+    <string name="question4">China created the coronavirus?</string>
+    <string name="question5">Did we ever got to the Moon?</string>
+    <string name="question6">Is 5G dangerous?</string>
+    <string name="question7">Is the sky falling?</string>
+    <string name="question8">Google knows everything about us?</string>
 </resources>

@@ -1,3 +1,3 @@
 package com.example.quizapp
 
-data class Question(val text: String, val answer: Boolean)
+data class Question(val text: String, val answer: Boolean, var answered: Boolean)
