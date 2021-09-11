@@ -2,6 +2,7 @@ package com.example.quizapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Log.d("QUIZZAPP_DEBUG", "OnCreate()...")
 
         gameModel = GameModel()
 
@@ -39,5 +41,30 @@ class MainActivity : AppCompatActivity() {
         btnNext.setOnClickListener{ v: View ->
             txtQuestion.text = gameModel.nextQuestion().text
         }
+    }
+
+    override fun onStart() {
+       super.onStart()
+        Log.d("QUIZZAPP_DEBUG", "OnStar()...")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("QUIZZAPP_DEBUG", "OnResume()...")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("QUIZZAPP_DEBUG", "OnPause()...")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("QUIZZAPP_DEBUG", "OnStop()...")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("QUIZZAPP_DEBUG", "onDestroy()...")
     }
 }
