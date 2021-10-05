@@ -1,6 +1,8 @@
 package com.example.quizapp
 
-class GameModel {
+import androidx.lifecycle.ViewModel
+
+class GameModel() : ViewModel() {
     private val questions = listOf<Question>(
         Question("¿La luna es de queso?", true),
         Question("¿La tierra es plana?", false),
@@ -19,5 +21,14 @@ class GameModel {
     fun nextQuestion() : Question {
         currentQuestionIndex = (currentQuestionIndex + 1) % questions.size
         return questions[currentQuestionIndex]
+    }
+
+    fun getCurrentQuestionIndex () = currentQuestionIndex
+
+    fun setCurrentQuestionIndex(index: Int) {
+        if (index >= questions.size) {
+            throw IndexOutOfBoundsException("index")
+        }
+        currentQuestionIndex = index
     }
 }
